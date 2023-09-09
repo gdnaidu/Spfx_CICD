@@ -31,10 +31,10 @@ jobs:
     # gulp bundle and package solution
     - name: Bundle 
       run: |
-        gulp bundle --ship
+        gulp bundle
     - name: Package ${{ env.SAMPLE_TO_BUILD_DEPLOY }}
       run: |
-        gulp package-solution --ship 
+        gulp package-solution 
     - name: Set pkgname
       id: get-pkgname
       run: |
